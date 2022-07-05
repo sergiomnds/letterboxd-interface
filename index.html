@@ -22,16 +22,21 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img src="img/letterboxd-logo.png" alt="">Letterboxd
+                        <img class="brand-img" src="img/letterboxd-logo.png" alt="">Letterboxd
                     </a>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown">
+
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                     data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="profile">
+                                        <img class="profile-pic" src="img/profile-steven.jpg" alt="">
+                                    </div>
                                     IMSERJO
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#">Home</a>
                                     <a class="dropdown-item" href="#">Profile</a>
                                     <a class="dropdown-item" href="#">Films</a>
@@ -43,6 +48,7 @@
                                     <a class="dropdown-item" href="#">Tags</a>
                                     <a class="dropdown-item" href="#">Action</a>
                                     <a class="dropdown-item" href="#">Network</a>
+                                    <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#">Settings</a>
                                     <a class="dropdown-item" href="#">Subscriptions</a>
                                     <a class="dropdown-item" href="#">Sign Out</a>
@@ -72,10 +78,21 @@
                                 </a>
                             </li>
                         </ul>
-                        <button type="button" class="btn btn-success">
-                            <span class="material-icons">add</span>
-                            LOG
-                        </button>
+                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                            <button type="button" class="btn btn-success">
+                                <span class="material-icons">add</span>
+                                LOG
+                            </button>
+                            <div class="btn-group" role="group">
+                                <button id="btnGroupDrop1" data-bs-toggle="dropdown" type="button"
+                                    class="btn btn-success btn-secondary dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <a class="dropdown-item" href="#">Start a new List</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </nav>
             </div>

@@ -1,4 +1,32 @@
+body {
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
 .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0;
+}
+
+.profile {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.profile .profile-pic {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 2px solid gray;
+}
+
+.navbar-brand {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.navbar-brand .brand-img {
+    width: 3rem;
+    margin-right: 7px;
 }
